@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Cake - Cake Delight</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="order">
+        <h2>Place Your Order</h2>
+        <form action="#">
+            <label for="cake-type">Select Cake Type:</label>
+            <select id="cake-type" name="cake-type">
+                <option value="chocolate">Chocolate Cake</option>
+                <option value="Vanilla">Vanilla Cake</option>
+                <option value="Butter Scotch">Butter Scotch Cake</option>
+                <option value="Red Velvet">Red Velvet Cake</option>
+                <option value="Cheese">CheeseCake</option>
+                <option value="Fruit">FruitCake</option>
+            </select>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" required>
+
+            <label for="delivery-date">Delivery Date:</label>
+            <input type="date" id="delivery-date" name="delivery-date" required>
+
+            <button type="submit">Order Now</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Cake Delight</p>
+    </footer>
+</body>
+</html>
